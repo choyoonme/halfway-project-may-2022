@@ -1,18 +1,28 @@
-body{
+body {
   background: aquamarine;
 }
 
-h1 > span{
-  display:none;
+h1>span {
+  display: none;
 }
 
-h1 > span.show{
+h1>span.show {
   display: inline-block;
 }
 
-header{
+header {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 95vh;
+}
+
+.smile {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

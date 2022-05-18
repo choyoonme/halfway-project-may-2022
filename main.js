@@ -11,16 +11,18 @@ console.log("main");
 // animate__animated animate__bounce show
 let spanTags = $('h1 > span');
 let count = 0;
-
+let redCircle = $('.smile');
 // for(var i = 0; i < spanTags.length; i++){
 //   console.log(spanTags.get(i));
 // }
 
 let interval = setInterval(() => {
   $(spanTags.get(count)).addClass("animate__animated animate__bounce animate__infinite show");
-
+  $(redCircle.get(count)).addClass("animate__animated animate__bounce animate__infinite show")
   count++;
-  if(count >= spanTags.length){
+  if (count >= spanTags.length) {
     clearInterval(interval);
   }
 }, 300);
+
+
