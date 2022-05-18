@@ -18,7 +18,7 @@ let redCircle = $('.smile');
 
 let interval = setInterval(() => {
   $(spanTags.get(count)).addClass("animate__animated animate__bounce animate__infinite show");
-  $(redCircle.get(count)).addClass("animate__animated animate__bounce animate__infinite show")
+  $(redCircle.get(count)).addClass("animate__animated animate__bounce animate__infinite show flash")
   count++;
   if (count >= spanTags.length) {
     clearInterval(interval);
